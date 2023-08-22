@@ -13,7 +13,7 @@ def main():
     file_list = os.listdir(res_folder)
 
     Tool.mkdir(target_folder)
-    Tool.rename(file_list, res_folder, target_folder)
+    Tool.repair_to_png(file_list, res_folder, target_folder)
 
 
 # __main__ 是python的一个特殊的内置变量名。

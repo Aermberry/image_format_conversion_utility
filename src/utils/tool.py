@@ -7,9 +7,9 @@ class Tool:
     # 创建文件夹
     @classmethod
     def mkdir(cls, path):
-        isExists = os.path.exists(path)
+        is_exists = os.path.exists(path)
 
-        if not isExists:
+        if not is_exists:
 
             os.makedirs(path)
 
@@ -21,7 +21,7 @@ class Tool:
 
     # 重命名
     @classmethod
-    def rename(cls, files, res_path, target_path):
+    def repair_to_png(cls, files, res_path, target_path):
         for old_name in files:
 
             # 构建新的文件名，这里可以根据需要进行命名规则的修改
